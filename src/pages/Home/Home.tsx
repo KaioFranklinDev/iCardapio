@@ -52,6 +52,7 @@ export default function HomePage(){
                     </div>
                     <input className="w-full  bg-gray-100" type="text" placeholder="Busque por item ou loja..." ></input>
                 </div>
+                <button onClick={openModal}>acionar modal</button>
                 <CardItem onClick={openModal} nome={getRes.nome} descricao={getRes.descricao} preco={getRes.preco} foto={getRes.foto}/>
                 <CardItem onClick={openModal} nome={getRes.nome} descricao={getRes.descricao} preco={getRes.preco} foto={getRes.foto}/>
                 
