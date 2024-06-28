@@ -1,18 +1,22 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
-const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+export default {
+  content: [],
   theme: {
     extend: {},
   },
-  variants: {
-    extend: {},
-  },
   plugins: [],
+} satisfies Config
+
+/*
+ * /** @type {import('postcss-load-config').Config} 
+const config = {
+  plugins: {
+    tailwindcss: {config:'./tailwindcss.config.mjs'},
+    autoprefixer: {},
+  },
 };
+
 export default config;
 
+ */
