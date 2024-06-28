@@ -1,6 +1,5 @@
 import CardItem from "@/Components/CardItem";
 import ModalComponent from "@/Components/ConfirmItem";
-import FooterCart from "@/Components/FooterCart";
 import FooterWithCart from "@/Components/FooterWithCar";
 import Image from "next/image";
 import { useState } from "react";
@@ -30,7 +29,7 @@ export default function HomePage(){
             <main className="flex flex-col items-center min-h-screen h-auto  overflow-x-hidden w-[414px] bg-white">
                 <header className="flex items-center justify-center overflow-y-hidden max-w-[1275px] w-full h-[100px] bg-red-600">
                     <div>
-                        <Image src={'/assets/img/capa-mc.avif'} height={100} width={500} alt="foto de capa restaurante"/>
+                        <Image src={'/assets/img/capa-mc.avif'} height={100} width={500} alt="foto de capa restaurante" priority />
                     </div>
                 </header>
                 <section className="flex flex-row gap-8 mt-5">

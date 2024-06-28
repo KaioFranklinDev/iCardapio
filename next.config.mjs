@@ -2,8 +2,16 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['static.ifood-static.com.br'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'static.ifood-static.com.br',
+        port: '',
+        pathname: '/image/upload/t_low/pratos/**',
+      },
+    ],
   },
 };
 
 export default nextConfig;
+
