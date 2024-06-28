@@ -21,7 +21,7 @@ const FooterWithCart = () => {
         <footer onClick={toggleCart} className="flex flex-row justify-around items-center w-[414px] h-[70px] bg-red-600 text-white">
           <div><Image src={'/assets/bag.svg'} height={26} width={26} alt="simbolo carrinho" /></div>
           <div>Ver sacola</div>
-          <div>R$ 107.90</div>
+          <div>R$ 287.90</div>
         </footer> 
         <div className="h-[calc(100vh-70px)] bg-white text-black p-4">
           <Cart fnc={toggleCart}/>
