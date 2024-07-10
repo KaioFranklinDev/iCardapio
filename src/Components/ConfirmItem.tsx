@@ -8,7 +8,7 @@ type ModalComponentProps = {
   isOpen: boolean;
   onRequestClose: () => void;
   nome:string
-  preco:number
+  preco:number | undefined
   descricao:string
   foto:string
 
@@ -31,7 +31,7 @@ function ModalComponent({ isOpen, onRequestClose, nome, preco, descricao, foto}:
         cancelar
       </button>
       <button className='bg-red-500 text-white px-4 py-2 rounded'>
-        Adicinar R${preco.toFixed(2)}
+        Adicinar R${preco}
       </button>
     </Modal>
   );

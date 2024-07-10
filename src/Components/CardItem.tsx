@@ -3,15 +3,16 @@ interface CardItemProps {
     preco:number,
     foto:string,
     descricao:string,
-    onClick:any
+    onClick:any,
+    
 }
 import Image from "next/image";
 import Link from "next/link";
 
 export default function CardItem(props:CardItemProps){
     return(
-        <Link href={"/"} onClick={props.onClick} >
-            <div className="flex flex-col items-center mt-4 m-5">
+        <Link  href={"/"} onClick={props.onClick} >
+            <div  className={`flex flex-col items-center mt-4 m-5`}>
                 <div className="flex flex-row">
                     <div>
                         <p className="font-semibold text-gray-600">{props.nome}</p>

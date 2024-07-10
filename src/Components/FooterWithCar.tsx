@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import Cart from './Cart';
+import { servidorDB } from '../../servidorDB/servidorDB';
+
+
 
 const FooterWithCart = () => {
   const [isCartVisible, setIsCartVisible] = useState(false);
